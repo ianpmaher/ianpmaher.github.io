@@ -44,5 +44,5 @@
   "devDependencies": {
     "gh-pages": "^6.1.0"
   },
-  "homepage": "/./frontend/public/index.html"
+  "homepage": "https://ianpmaher.github.io/"
 }
