@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import styled from "styled-components";
 import resumeList from "./resumeList";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+// import CardContent from "@mui/material/CardContent";
 
 const ResumeContainer = styled.div`
     display: flex;
@@ -11,6 +11,7 @@ const ResumeContainer = styled.div`
     justify-content: center;
     max-width: 80vw;
     margin: 0 auto;
+    font-family: "Klara", sans-serif;
 `;
 
 const ResumeHeader = styled.h4`
@@ -23,7 +24,7 @@ const ResumeHeader = styled.h4`
 
 const ResumeListItem = styled.li`
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #000;
     margin: 0 auto;
 `;
@@ -31,14 +32,19 @@ const ResumeListItem = styled.li`
 const GridContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5rem;
+    grid-gap: 0.25rem;
     padding: 1rem;
     place-items: center;
     place-content: center;
     list-style-type: none;
     margin: 0 auto;
     @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.75rem;
+        padding: 0 auto;
     }
 `;
 
@@ -55,7 +61,7 @@ const Resume = () => {
                 {resumeList["Technical Skills"].map((skill) => (
                     <Card
                         key={skill}
-                        sx={{ p: 1, boxShadow: 10, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.8)", fontFamily: "JetBrains Mono, monospace", ":hover": { fontSize: "1.2rem", backgroundColor: "black", color: "white" }, transition: "all 0.2s ease-in-out" }}
+                        sx={{ p: 0.75, boxShadow: 10, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.8)", fontFamily: "JetBrains Mono, monospace", ":hover": { fontSize: "1.1rem", backgroundColor: "black", color: "white" }, transition: "all 0.2s ease-in-out" }}
                     >
                         {skill}
                     </Card>

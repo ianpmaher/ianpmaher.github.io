@@ -3,7 +3,8 @@ const resumeList = {
     "Technical Skills": [
             "React.js",
             "JavaScript",
-            "CSS",
+            "Tailwind CSS",
+            "Next.js",
             "Git",
             "Agile Methodology",
             "Express.js",

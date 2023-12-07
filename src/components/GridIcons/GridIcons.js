@@ -21,8 +21,8 @@ const GridContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     width: 100%;
-    grid-gap: 5rem;
-    padding: 10rem;
+    grid-gap: 1rem;
+    padding: 1rem 8rem;
     place-items: center;
     place-content: center;
     list-style-type: none;
@@ -45,14 +45,14 @@ const GridIcons = (props) => {
             { cardImages.map((cardImages) => (
             <Card
                 key={cardImages}
-                sx={{ p: {xs: 0.5, md: 2}, boxShadow: 5, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.7)", ":hover": { boxShadow: 20}, transition: "all 0.2s ease-in-out" }}
+                sx={{ p: {xs: 0.5, md: 1}, boxShadow: 5, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.7)", ":hover": { boxShadow: 20}, transition: "all 0.2s ease-in-out" }}
             >
                 <CardMedia
                     component="img"
                     // height= "100"
                     src={cardImages}
                     alt={cardImages}
-                    sx={{ objectFit: "contain", height: { xs: "60px", md: "80px" }, width: { xs: "80px", md: "100px"}}}
+                    sx={{ objectFit: "contain", height: { xs: "60px", md: "80px" }, width: { xs: "80px", md: "110px"}}}
                 />
             </Card>
             ))}
