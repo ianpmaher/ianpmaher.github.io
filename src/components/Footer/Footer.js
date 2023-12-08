@@ -7,7 +7,7 @@ const FooterContainer = styled.footer`
     align-items: center;
     justify-content: center;
     width: 90vw;
-    margin: 0 auto 1rem auto;
+    margin: 0.5rem auto;
 `;
 
 const Footer = () => {

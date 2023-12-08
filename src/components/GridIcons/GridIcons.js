@@ -16,10 +16,11 @@ import postgresIcon from "../../assets/postgresql.svg";
 import tailwindCssIcon from "../../assets/tailwindcss.svg";
 import materialUiIcon from "../../assets/material-ui.svg";
 import expressIcon from "../../assets/express.svg";
+import nextjsIcon from "../../assets/nextjs.svg";
 
 const GridContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     grid-gap: 1rem;
     padding: 1rem 8rem;
@@ -29,8 +30,13 @@ const GridContainer = styled.div`
     margin: 0 auto;
     object-fit: cover;
     @media (max-width: 768px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: 2rem;
+        grid-gap: 0.25rem;
+    }
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0rem;
         grid-gap: 0.5rem;
     }
 `;
@@ -38,7 +44,7 @@ const GridContainer = styled.div`
 
 const GridIcons = (props) => {
     
-    const cardImages = [ cssIcon, htmlIcon, jsIcon, reactIcon, nodeIcon, mongoIcon, pythonIcon, djangoIcon, gitIcon, githubIcon, postgresIcon, tailwindCssIcon, materialUiIcon, expressIcon]
+    const cardImages = [ cssIcon, htmlIcon, jsIcon, reactIcon, nodeIcon, mongoIcon, pythonIcon, djangoIcon, gitIcon, githubIcon, postgresIcon, tailwindCssIcon, materialUiIcon, expressIcon, nextjsIcon]
 
     return (
         <GridContainer>

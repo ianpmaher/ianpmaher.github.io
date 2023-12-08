@@ -15,14 +15,14 @@ const FlexContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
 `;
 
 const ProjectsContainer = styled.ul`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     place-items: stretch;
     place-content: center;
     list-style-type: none;
@@ -39,6 +39,7 @@ const ProjectsContainer = styled.ul`
 `;
 
 const CardStyle = {
+    objectFit: "contain",
     transition: "1.5s all ease-out",
     "&:hover": {
         transform: "scale(1.1)",

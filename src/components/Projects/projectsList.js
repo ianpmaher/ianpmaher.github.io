@@ -1,3 +1,9 @@
+import italianOnPhone from "../../assets/italianOnPhone.png";
+import gtaScreenshot from "../../assets/gtaScreenshot.png";
+import moodScreenshot from "../../assets/moodRating.png";
+import pawsScreenshot from "../../assets/pawsScreenshot.png";
+import dogMountain from "../../assets/dogMountain.jpg";
+
 const projectsList =
 
 [
@@ -9,8 +15,9 @@ const projectsList =
         "github": "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
         "github2": "https://github.com/ianpmaher/pawsOnLifeBackEnd",
         "live": "https://pawson.life/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Zazu_the_dog_on_Lion%27s_Head_mountain_24.jpg/1280px-Zazu_the_dog_on_Lion%27s_Head_mountain_24.jpg", // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
-        "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
+        image: dogMountain,
+        "screenshot": pawsScreenshot, // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+        // "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
     },
     {
         "id": 2,
@@ -19,7 +26,8 @@ const projectsList =
         "tags": ["MVC", "MongoDB", "Express", "Node", "Embedded JavaScript (EJS)", "CSS", "JavaScript", "Heroku", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/moodring",
         "live": "https://still-sierra-16854-4298cf6fca1b.herokuapp.com/logs/",
-        "image": "https://user-images.githubusercontent.com/120536234/270083620-4e5ba78d-720d-4852-9ce4-ee688015c14d.png",
+        "image": moodScreenshot,
+        // "image": "https://user-images.githubusercontent.com/120536234/270083620-4e5ba78d-720d-4852-9ce4-ee688015c14d.png",
         "screenshot": "https://user-images.githubusercontent.com/120536234/270083592-2c66d8d6-2e0a-4e70-bd8e-1ddcaa97a358.png"
     },
     {
@@ -29,7 +37,7 @@ const projectsList =
         "tags": ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
         "github": "https://github.com/ianpmaher/italian",
         "live": "https://main--darling-rabanadas-f9d73b.netlify.app/",
-        "image": "",
+        "image": italianOnPhone,
         "screenshot": "",
     },
     {
@@ -39,7 +47,8 @@ const projectsList =
         "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/gta",
         "live": "https://grand-theft-autocorrect.netlify.app/",
-        "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
+        "image": gtaScreenshot,
+        // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
     }
 ]
 

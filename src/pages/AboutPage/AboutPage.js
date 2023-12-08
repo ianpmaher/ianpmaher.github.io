@@ -16,6 +16,10 @@ const AboutPageHeader = styled.h1`
     color: #fff;
     margin: 0 auto;
     letter-spacing: 0.1rem;
+    @media (max-width: 768px) {
+        font-size: 1.25rem;
+        letter-spacing: auto;
+    }
 `;
 
 const AboutPageText = styled.p`

@@ -51,7 +51,7 @@ const Contact = () => {
                 </IconCard>
                 <IconCard>
                     <a
-                        href="https://www.linkedin.com/in/ianmaher/"
+                        href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer noopener"
                         title="Resume"

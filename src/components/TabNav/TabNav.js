@@ -41,8 +41,9 @@ function a11yProps(index) {
 const TabLabelStyle = {
     textTransform: "capitalize",
     fontWeight: "bold",
-    fontSize: "1rem",
     fontFamily: "'Roboto Serif', serif",
+    margin: "0 auto",
+    padding: "0 auto",
 };
 
 const TabNav = (props) => {
@@ -60,7 +61,7 @@ const TabNav = (props) => {
                     /* I remembered the dynamic way to set properties... so for this "AppBar" */
                     /* I'm setting the width to 80vw on mobile and 50vw on desktop */
                     /* sx={{ property: { propertyShortHand: value, propertyShortHand: value} }} */   
-                    sx={{ width: { xs: "80vw", md: "50vw"}, m: "0 auto", borderRadius: "20px", bgcolor: "secondary.light", boxShadow: "5" }}
+                    sx={{ width: { xs: "100%", md: "50vw"}, m: "0 auto", borderRadius: "10px", bgcolor: "secondary.light", boxShadow: "5" }}
                 >
                     <Tabs
                         value={value}
@@ -68,9 +69,9 @@ const TabNav = (props) => {
                         indicatorColor="primary"
                         textColor="inherit"
                         aria-label="tabs"
-                        variant="fullWidth"
-                        centered
-                        // sx={{ padding: "0 0.5rem" }}
+                        variant="scrollable"
+                        // centered
+                        sx={{ p: "0", m: "0" }}
                         // selectionFollowsFocus
                     >
                         <Tab label="Home" {...a11yProps(0)} style={TabLabelStyle} />
@@ -81,6 +82,7 @@ const TabNav = (props) => {
                 </AppBar>
                 <TabPanel value={value} index={0}>
                     <AboutPage />
+                    <Projects />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
                     <Projects />

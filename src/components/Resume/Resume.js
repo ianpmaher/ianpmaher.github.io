@@ -69,13 +69,15 @@ const Resume = () => {
             </GridContainer>
             <p>
                 <a
-                    href="https://docs.google.com/document/d/1Bj2ZVZvV1JZ1x5bXn6Dq0Zyf4j3oY2Z9LZJ1p6z4V7k/edit?usp=sharing"
+                    href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     View my resume
                 </a>
             </p>
+            
+            <iframe src="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/preview" width="640" height="480" title="Ian Maher Resume"></iframe>
         </ResumeContainer>
     );
 };

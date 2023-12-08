@@ -19,6 +19,10 @@ const HeaderText = styled.h1`
     margin: 0.2rem 0;
     letter-spacing: 0.1rem;
     font-family: 'Merriweather', serif;
+    @media (max-width: 768px) {
+        font-size: 1.25rem;
+        letter-spacing: auto;
+    }
 `;
 //font-family: 'Crimson Text', serif;
 
