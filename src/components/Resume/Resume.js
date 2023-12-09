@@ -11,7 +11,6 @@ const ResumeContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80vw;
     margin: 0 auto;
     font-family: "Klara", sans-serif;
 `;
@@ -28,6 +27,9 @@ const ResumeListItem = styled.li`
     list-style: none;
     font-size: 1.1rem;
     color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem 2rem;
     margin: 0 auto;
 `;
 

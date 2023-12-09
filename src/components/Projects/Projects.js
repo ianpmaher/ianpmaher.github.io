@@ -40,6 +40,7 @@ const ProjectsContainer = styled.ul`
 const CardStyle = {
     objectFit: "contain",
     transition: "1.5s all ease-out",
+    backgroundColor: "#FAF9F6",
     "&:hover": {
         transform: "scale(1.1)",
         boxShadow: 10,
@@ -61,7 +62,7 @@ const Projects = (props) => {
         <li key={project.id}>
             <Card sx={{ maxWidth: 600, height: "100%", bgcolor: "", py: 0.5, px: 0, boxShadow: 10 }}>
                 <CardMedia component="img" height="450" image={project.image} alt={project.title} sx={CardStyle} />
-                <CardContent>
+                <CardContent sx={{bgcolor: "#FAF9F6"}}>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <ProjectTags tags={project.tags} />

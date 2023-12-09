@@ -22,19 +22,19 @@ const AboutPageHeader = styled.h1`
 `;
 
 const AboutPageText = styled.p`
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin: 0 auto;
     padding: 0rem auto;
-    color: #000;
 `;
 
 const TextBackground = styled.div`
-    background-color: #fff;
+    background-color: black;
     opacity: 1;
     border-radius: 5px;
     padding: 1rem 2rem;
-    max-width: 50%;
+    max-width: 60%;
     margin: 0 auto;
+    color: #fff;
     @media (max-width: 768px) {
         max-width: 100%;
         padding: 0.5rem 1rem;
