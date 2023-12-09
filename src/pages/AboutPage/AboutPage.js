@@ -6,9 +6,8 @@ const AboutPageContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    width: 80vw;
-    margin: 0.5rem auto;
-    padding: 2rem auto;
+    margin: auto auto 0.5rem auto;
+    padding: 0.5rem;
     font-family: 'Karla', sans-serif;
 `;
 const AboutPageHeader = styled.h1`
@@ -31,9 +30,15 @@ const AboutPageText = styled.p`
 
 const TextBackground = styled.div`
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 1;
     border-radius: 5px;
     padding: 1rem 2rem;
+    max-width: 50%;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        max-width: 100%;
+        padding: 0.5rem 1rem;
+    }
 `;
 
 const wordsArr = [
@@ -52,9 +57,6 @@ const AboutPage = (props) => {
             <TextBackground>
                 <AboutPageText>
                     Hi! I'm a software with a background in education and a passion for learning. I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp. I'm a team player with a passion for learning and a drive to succeed.
-                </AboutPageText>
-                <AboutPageText>
-                    Hi! I'm a software engineer with a background in education and a passion for learning. I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp. I'm a team player with a passion for learning and a drive to succeed.
                 </AboutPageText>
             </TextBackground>
             <GridIcons />

@@ -29,6 +29,11 @@ const GridContainer = styled.div`
     list-style-type: none;
     margin: 0 auto;
     object-fit: cover;
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 1rem;
+        grid-gap: 0.25rem;
+    }
     @media (max-width: 768px) {
         grid-template-columns: repeat(4, 1fr);
         padding: 2rem;
@@ -58,7 +63,7 @@ const GridIcons = (props) => {
                     // height= "100"
                     src={cardImages}
                     alt={cardImages}
-                    sx={{ objectFit: "contain", height: { xs: "60px", md: "80px" }, width: { xs: "80px", md: "110px"}}}
+                    sx={{ objectFit: "contain", height: { xs: "60px", md: "80px" }, width: { xs: "70px", sm: "80px", md: "90px", lg: "100px"}}}
                 />
             </Card>
             ))}

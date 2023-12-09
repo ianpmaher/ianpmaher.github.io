@@ -2,7 +2,9 @@
 import styled from "styled-components";
 import resumeList from "./resumeList";
 import Card from "@mui/material/Card";
+// import IconCard from "../IconCard/IconCard";
 // import CardContent from "@mui/material/CardContent";
+// import FileDownloadDoneRoundedIcon from '@mui/icons-material/FileDownloadDoneRounded';
 
 const ResumeContainer = styled.div`
     display: flex;
@@ -67,17 +69,17 @@ const Resume = () => {
                     </Card>
                 ))}
             </GridContainer>
-            <p>
+            {/* <IconCard style={{transform: "scale(1.5)", backgroundColor: "wheat"}}>
                 <a
                     href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    View my resume
+                    <FileDownloadDoneRoundedIcon />
                 </a>
-            </p>
+            </IconCard> */}
             
-            <iframe src="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/preview" width="640" height="480" title="Ian Maher Resume"></iframe>
+            {/* <iframe src="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/preview" width="640" height="480" title="Ian Maher Resume"></iframe> */}
         </ResumeContainer>
     );
 };

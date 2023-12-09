@@ -2,14 +2,14 @@ import styled from "styled-components";
 import Contact from "../Contact/Contact";
 import Box from '@mui/material/Box';
 
+
 const HeaderContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: row wrap;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
-    position: sticky;
-    width: 90vw;
+    width: 80vw;
     margin: 0.75rem auto;
 `;
 

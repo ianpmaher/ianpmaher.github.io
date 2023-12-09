@@ -1,8 +1,8 @@
-import italianOnPhone from "../../assets/italianOnPhone.png";
-import gtaScreenshot from "../../assets/gtaScreenshot.png";
-import moodScreenshot from "../../assets/moodRating.png";
-import pawsScreenshot from "../../assets/pawsScreenshot.png";
-import dogMountain from "../../assets/dogMountain.jpg";
+let italianOnPhone = require("../../assets/italianOnPhone.png");
+let gtaScreenshot = require("../../assets/gtaScreenshot.png");
+let moodScreenshot = require("../../assets/moodRating.png");
+let pawsScreenshot = require("../../assets/pawsScreenshot.png");
+let dogMountain = require("../../assets/dogMountain.jpg");
 
 const projectsList =
 

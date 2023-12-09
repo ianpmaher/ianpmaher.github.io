@@ -15,14 +15,13 @@ const FlexContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 90vw;
 `;
 
 const ProjectsContainer = styled.ul`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    padding: 0.5rem;
+    padding: 0.25rem;
     place-items: stretch;
     place-content: center;
     list-style-type: none;
@@ -60,8 +59,8 @@ const StyledButton = styled(Button)`
 const Projects = (props) => {
     const listItems = projectsList.map((project) => (
         <li key={project.id}>
-            <Card sx={{ maxWidth: 500, height: "100%", bgcolor: "", boxShadow: 10 }}>
-                <CardMedia component="img" height="350" image={project.image} alt={project.title} sx={CardStyle} />
+            <Card sx={{ maxWidth: 600, height: "100%", bgcolor: "", py: 0.5, px: 0, boxShadow: 10 }}>
+                <CardMedia component="img" height="450" image={project.image} alt={project.title} sx={CardStyle} />
                 <CardContent>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
