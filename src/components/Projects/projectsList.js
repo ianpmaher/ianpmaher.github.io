@@ -49,6 +49,16 @@ const projectsList =
         "live": "https://grand-theft-autocorrect.netlify.app/",
         "image": gtaScreenshot,
         // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
+    },
+    {
+        "id": 4,
+        "title": "Grand Theft Autocorrect",
+        "description": "A typing test game utilizing JavaScript, Fetch API, and dynamic DOM manipulation.",
+        "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
+        "github": "https://github.com/ianpmaher/gta",
+        "live": "https://grand-theft-autocorrect.netlify.app/",
+        "image": gtaScreenshot,
+        // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
     }
 ]
 

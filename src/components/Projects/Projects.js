@@ -60,21 +60,48 @@ const StyledButton = styled(Button)`
 const Projects = (props) => {
     const listItems = projectsList.map((project) => (
         <li key={project.id}>
-            <Card sx={{ maxWidth: 600, height: "100%", bgcolor: "", py: 0.5, px: 0, boxShadow: 10 }}>
+            <Card sx={{ maxWidth: 600, borderRadius: 3, height: "100%", bgcolor: "", py: 0.5, px: 0, boxShadow: 10 }}>
                 <CardMedia component="img" height="450" image={project.image} alt={project.title} sx={CardStyle} />
-                <CardContent sx={{bgcolor: "#FAF9F6"}}>
+                <CardContent sx={{ bgcolor: "#FAF9F6" }}>
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <ProjectTags tags={project.tags} />
                     <br />
-                    <a href={project.github} aria-label="GitHub" title={project.title} target="__blank" rel="noreferrer noopener">
+                    <a
+                        href={project.github}
+                        aria-label="GitHub"
+                        title={project.title}
+                        target="__blank"
+                        rel="noreferrer noopener"
+                    >
                         <StyledButton>
                             GitHub
                             <GitHubIcon />
                         </StyledButton>
                     </a>
                     <SpaceSpan />
-                    <a href={project.live} aria-label="Live deployment" title={project.title} target="__blank" rel="noreferrer noopener">
+                    {project.github2 && (
+                        <a
+                            href={project.github2}
+                            aria-label="GitHub"
+                            title={project.title}
+                            target="__blank"
+                            rel="noreferrer noopener"
+                        >
+                            <StyledButton>
+                                GitHub
+                                <GitHubIcon />
+                            </StyledButton>
+                        </a>
+                    )}
+                    <SpaceSpan />
+                    <a
+                        href={project.live}
+                        aria-label="Live deployment"
+                        title={project.title}
+                        target="__blank"
+                        rel="noreferrer noopener"
+                    >
                         <StyledButton>
                             Live Site
                             <OpenInNewRoundedIcon />

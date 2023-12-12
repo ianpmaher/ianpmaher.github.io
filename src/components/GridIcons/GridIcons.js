@@ -46,29 +46,54 @@ const GridContainer = styled.div`
     }
 `;
 
-
 const GridIcons = (props) => {
-    
-    const cardImages = [ cssIcon, htmlIcon, jsIcon, reactIcon, nodeIcon, mongoIcon, pythonIcon, djangoIcon, gitIcon, githubIcon, postgresIcon, tailwindCssIcon, materialUiIcon, expressIcon, nextjsIcon]
+    const cardImages = [
+        cssIcon,
+        htmlIcon,
+        jsIcon,
+        reactIcon,
+        nodeIcon,
+        mongoIcon,
+        pythonIcon,
+        djangoIcon,
+        gitIcon,
+        githubIcon,
+        postgresIcon,
+        tailwindCssIcon,
+        materialUiIcon,
+        expressIcon,
+        nextjsIcon,
+    ];
 
     return (
         <GridContainer>
-            { cardImages.map((cardImages) => (
-            <Card
-                key={cardImages}
-                sx={{ p: {xs: 0.5, md: 1}, boxShadow: 5, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.7)", ":hover": { boxShadow: 20}, transition: "all 0.2s ease-in-out" }}
-            >
-                <CardMedia
-                    component="img"
-                    // height= "100"
-                    src={cardImages}
-                    alt={cardImages}
-                    sx={{ objectFit: "contain", height: { xs: "60px", md: "80px" }, width: { xs: "70px", sm: "80px", md: "90px", lg: "100px"}}}
-                />
-            </Card>
+            {cardImages.map((cardImages) => (
+                <Card
+                    key={cardImages}
+                    sx={{
+                        p: { xs: 0.5, md: 1 },
+                        boxShadow: 5,
+                        borderRadius: "20px",
+                        bgcolor: "rgba(255,255,255,0.6)",
+                        transition: "all 0.3s ease-out",
+                        ":hover": { boxShadow: 20, bgcolor: "rgba(255,255,255,1)", transform: "scale(1.1)" },
+                    }}
+                >
+                    <CardMedia
+                        component="img"
+                        // height= "100"
+                        src={cardImages}
+                        alt={cardImages}
+                        sx={{
+                            objectFit: "contain",
+                            height: { xs: "60px", md: "80px" },
+                            width: { xs: "70px", sm: "80px", md: "90px", lg: "100px" },
+                        }}
+                    />
+                </Card>
             ))}
         </GridContainer>
     );
-}
+};
 
 export default GridIcons;

@@ -12,10 +12,11 @@ const Button = styled.button`
     border-radius: 20px;
     background-color: #51A3A3;
     cursor: pointer;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-out;
     &:hover {
-        opacity: 0.8;
+        opacity: 1;
         border: 2px solid #75485E;
+        transform: scale(1.1);
     }
     &:active {
         background-color: #DFCC74;

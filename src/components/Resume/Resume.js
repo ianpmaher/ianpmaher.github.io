@@ -17,7 +17,7 @@ const ResumeContainer = styled.div`
 
 const ResumeHeader = styled.h4`
     font-size: 1.5rem;
-    color: #000;
+    color: #fff;
     margin: 0 auto;
     letter-spacing: 0.1rem;
     font-family: "Roboto Serif", serif;
@@ -65,7 +65,7 @@ const Resume = () => {
                 {resumeList["Technical Skills"].map((skill) => (
                     <Card
                         key={skill}
-                        sx={{ p: 0.75, boxShadow: 10, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.8)", fontFamily: "JetBrains Mono, monospace", ":hover": { fontSize: "1.1rem", backgroundColor: "black", color: "white" }, transition: "all 0.2s ease-in-out" }}
+                        sx={{ p: 0.75, boxShadow: 10, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.8)", fontFamily: "JetBrains Mono, monospace", ":hover": { fontSize: "1rem", backgroundColor: "black", color: "white" }, transition: "all 0.4s ease-in-out", cursor: "default" }}
                     >
                         {skill}
                     </Card>

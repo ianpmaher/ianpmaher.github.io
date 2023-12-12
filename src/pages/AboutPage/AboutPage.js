@@ -30,7 +30,7 @@ const AboutPageText = styled.p`
 const TextBackground = styled.div`
     background-color: black;
     opacity: 1;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1rem 2rem;
     max-width: 60%;
     margin: 0 auto;

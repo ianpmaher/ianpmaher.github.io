@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const CardContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
-    gap: 0.15rem;
+    gap: 0.1rem;
     align-items: center;
     justify-content: center;
     list-style-type: none;
@@ -15,15 +15,19 @@ const CardContainer = styled.div`
 
 const SmallCard = styled.div`
     margin: 0.1rem auto;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.4);
     cursor: default;
-    
+    transition: 0.4s all ease-out;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
 `;
 
 const SmallCardText = styled.h1`
     font-size: 0.75rem;
-    margin: 0.25rem 0.25rem;
+    margin: 0.2rem;
     font-weight: bold,
 `;
 
