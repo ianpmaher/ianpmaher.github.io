@@ -3,11 +3,11 @@ import Contact from "../Contact/Contact";
 
 const FooterContainer = styled.footer`
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    width: 90vw;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
+    padding: 0.5rem auto;
 `;
 
 const Footer = () => {
@@ -16,6 +16,6 @@ const Footer = () => {
             <Contact />
         </FooterContainer>
     );
-}
+};
 
 export default Footer;

@@ -6,7 +6,7 @@ const ResumePageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 80vw;
+    max-width: 65vw;
     margin: 0 auto;
 `
 

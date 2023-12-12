@@ -7,14 +7,13 @@ import IconCard from "../IconCard/IconCard";
 
 const ContactContainer = styled.div`
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
+    margin: 0 auto;
     justify-content: center;
 `;
 
-const ContactUl = styled.ul`
-    list-style-type: none;
-    width: 100%;
+const ContactUl = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

@@ -3,6 +3,7 @@ let gtaScreenshot = require("../../assets/gtaScreenshot.png");
 let moodScreenshot = require("../../assets/moodRating.png");
 let pawsScreenshot = require("../../assets/pawsScreenshot.png");
 let dogMountain = require("../../assets/dogMountain.jpg");
+let placeholder = require("../../assets/placeholder.png");
 
 const projectsList =
 
@@ -32,6 +33,16 @@ const projectsList =
     },
     {
         "id": 3,
+        "title": "Simply Scholars",
+        "description": "A full-stack web application utilizing the Next.js & Strapi.js stack. This is a platform for the non-tech-savvy to build and maintain their own scholarship websites and databases. Providing customizability and ease of use, Simply Scholars is a tool for scholarship organizations to reach more students.",
+        "tags": ["Next.js", "Strapi", "Tailwind", "Postgres", "Authorization", "Dynamic Routing"],
+        "github": "https://github.com/ianpmaher/simply-scholars",
+        "github2": "https://github.com/ianpmaher/simply-scholars-backend",
+        "live": "https://grand-theft-autocorrect.netlify.app/",
+        "image": placeholder,
+    },
+    {
+        "id": 4,
         "title": "Study Italian",
         "description": "A full-stack web application that allows users to create an account and save their favorite recipes. Users can also view recipes from other users.",
         "tags": ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
@@ -41,7 +52,7 @@ const projectsList =
         "screenshot": "",
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Grand Theft Autocorrect",
         "description": "A typing test game utilizing JavaScript, Fetch API, and dynamic DOM manipulation.",
         "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
@@ -50,16 +61,6 @@ const projectsList =
         "image": gtaScreenshot,
         // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
     },
-    {
-        "id": 4,
-        "title": "Grand Theft Autocorrect",
-        "description": "A typing test game utilizing JavaScript, Fetch API, and dynamic DOM manipulation.",
-        "tags": ["JavaScript", "Fetch API", "HTML", "CSS", "Netlify", "Git"],
-        "github": "https://github.com/ianpmaher/gta",
-        "live": "https://grand-theft-autocorrect.netlify.app/",
-        "image": gtaScreenshot,
-        // "image": "https://user-images.githubusercontent.com/120536234/260235684-673eb284-84fd-416d-96b5-d84da3da786d.png"
-    }
 ]
 
 export default projectsList;

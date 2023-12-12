@@ -31,8 +31,8 @@ const TextBackground = styled.div`
     background-color: black;
     opacity: 1;
     border-radius: 10px;
-    padding: 1rem 2rem;
-    max-width: 60%;
+    padding: 1rem;
+    max-width: 85%;
     margin: 0 auto;
     color: #fff;
     @media (max-width: 768px) {
@@ -56,7 +56,7 @@ const AboutPage = (props) => {
             <AboutPageHeader>Full Stack Developer | Education Advocate</AboutPageHeader>
             <TextBackground>
                 <AboutPageText>
-                    Hi! I'm a software with a background in education and a passion for learning. I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp. I'm a team player with a passion for learning and a drive to succeed.
+                    Hi! I'm a software engineer with a background in education and a passion for learning. I'm a graduate of General Assembly's Software Engineering Immersive Bootcamp. I love to find creative solutions for novel problems, individually and especially within a team environment.
                 </AboutPageText>
             </TextBackground>
             <GridIcons />

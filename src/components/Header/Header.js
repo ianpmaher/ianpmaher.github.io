@@ -9,8 +9,7 @@ const HeaderContainer = styled.div`
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    width: 80vw;
-    margin: 0.75rem auto;
+    margin: 1rem auto;
 `;
 
 const HeaderText = styled.h1`

@@ -7,7 +7,6 @@ const SidebarContainer = styled.nav`
     position: sticky;
     top: 0;
     height: 100vh;
-    width: 10rem;
     background-color: #51A3A3;
     padding: 1rem;
     flex: 0 0 12rem;

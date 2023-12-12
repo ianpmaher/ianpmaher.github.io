@@ -12,6 +12,7 @@ const ResumeContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    max-width: 100%;
     font-family: "Klara", sans-serif;
 `;
 
@@ -23,13 +24,12 @@ const ResumeHeader = styled.h4`
     font-family: "Roboto Serif", serif;
 `;
 
-const ResumeListItem = styled.li`
-    list-style: none;
-    font-size: 1.1rem;
+const ResumeListItem = styled.p`
+    font-size: 1rem;
     color: #000;
     background-color: #fff;
-    border-radius: 20px;
-    padding: 1rem 2rem;
+    border-radius: 10px;
+    padding: 1rem;
     margin: 0 auto;
 `;
 
@@ -52,20 +52,62 @@ const GridContainer = styled.div`
     }
 `;
 
+const StyledCard = styled(Card)`
+    max-width: 33%;
+    height: 100%;
+    &:hover {
+        transform: zIndex(1);
+    }
+`;
+
+const GridContainer2 = styled(GridContainer)`
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.25rem;
+    `;
+
 const Resume = () => {
     // declare state variable
     // const [hover, setHover] = useState(false);
 
     return (
         <ResumeContainer>
-            <ResumeHeader>About Me</ResumeHeader>
-            <ResumeListItem>{resumeList.brand}</ResumeListItem>
+            <ResumeHeader>Resume Section</ResumeHeader>
+            <GridContainer2>
+                <StyledCard>
+                    <ResumeListItem>
+                        I am a creative and process-driven full stack software developer with enthusiasm for building
+                        accessible designs and constructing technical solutions with the user in mind.
+                    </ResumeListItem>
+                </StyledCard>
+                <StyledCard>
+                    <ResumeListItem>
+                        I apply my professional experience as an educator and guidance counselor to my present work,
+                        with a focus on communication and an ability to work with people of all backgrounds.
+                    </ResumeListItem>
+                </StyledCard>
+                <StyledCard>
+                    <ResumeListItem>
+                        I thrive in a collaborative environment and am enthusiastic about projects centered on learning
+                        and inclusion.
+                    </ResumeListItem>
+                </StyledCard>
+            </GridContainer2>
+            {/* <ResumeListItem>{resumeList.brand}</ResumeListItem> */}
             <ResumeHeader>Technical Skills</ResumeHeader>
             <GridContainer>
                 {resumeList["Technical Skills"].map((skill) => (
                     <Card
-                        key={skill}
-                        sx={{ p: 0.75, boxShadow: 10, borderRadius: "20px", bgcolor: "rgba(255,255,255,0.8)", fontFamily: "JetBrains Mono, monospace", ":hover": { fontSize: "1rem", backgroundColor: "black", color: "white" }, transition: "all 0.4s ease-in-out", cursor: "default" }}
+                        key={skill.id}
+                        sx={{
+                            p: 0.75,
+                            boxShadow: 10,
+                            borderRadius: "20px",
+                            bgcolor: "rgba(255,255,255,0.8)",
+                            fontFamily: "JetBrains Mono, monospace",
+                            ":hover": { fontSize: "1rem", backgroundColor: "black", color: "white" },
+                            transition: "all 0.4s ease-in-out",
+                            cursor: "default",
+                        }}
                     >
                         {skill}
                     </Card>
@@ -80,7 +122,7 @@ const Resume = () => {
                     <FileDownloadDoneRoundedIcon />
                 </a>
             </IconCard> */}
-            
+
             {/* <iframe src="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/preview" width="640" height="480" title="Ian Maher Resume"></iframe> */}
         </ResumeContainer>
     );
