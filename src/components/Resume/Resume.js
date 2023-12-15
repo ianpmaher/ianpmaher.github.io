@@ -27,7 +27,7 @@ const ResumeHeader = styled.h4`
 const ResumeListItem = styled.p`
     font-size: 1rem;
     color: #fff;
-    background-color: #000;
+    background-color: #21222B;
     padding: 1rem;
     margin: 0 auto;
 `;

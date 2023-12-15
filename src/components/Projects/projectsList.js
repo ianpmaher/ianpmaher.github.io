@@ -2,8 +2,9 @@ let italianOnPhone = require("../../assets/italianOnPhone.png");
 let gtaScreenshot = require("../../assets/gtaScreenshot.png");
 let moodScreenshot = require("../../assets/moodRating.png");
 let pawsScreenshot = require("../../assets/pawsScreenshot.png");
-let dogMountain = require("../../assets/dogMountain.jpg");
+// let dogMountain = require("../../assets/dogMountain.jpg");
 let placeholder = require("../../assets/placeholder.png");
+let pawsOnLifeScreenshot = require("../../assets/pawsOnLifeScreenshot.png");
 
 const projectsList =
 
@@ -16,7 +17,7 @@ const projectsList =
         "github": "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
         "github2": "https://github.com/ianpmaher/pawsOnLifeBackEnd",
         "live": "https://pawson.life/",
-        image: dogMountain,
+        "image": pawsOnLifeScreenshot,
         "screenshot": pawsScreenshot, // Discott, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
         // "screenshot": "https://user-images.githubusercontent.com/120536234/282807646-28fd01fc-7a91-420c-8b23-1c3466654ecd.png"
     },
