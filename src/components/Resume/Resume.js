@@ -25,9 +25,9 @@ const ResumeHeader = styled.h4`
 `;
 
 const ResumeListItem = styled.p`
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
-    background-color: #21222B;
+    background-color: #21222b;
     padding: 1rem;
     margin: 0 auto;
 `;
@@ -55,6 +55,7 @@ const StyledCard = styled(Card)`
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    transition: "all 0.4s ease-in-out",
 `;
 
 const GridContainer2 = styled(GridContainer)`
@@ -68,29 +69,29 @@ const Resume = () => {
 
     return (
         <ResumeContainer>
-            <ResumeHeader>Resume Section</ResumeHeader>
+            <ResumeHeader>Let's connect!</ResumeHeader>
             <GridContainer2>
-                <span />
                 <StyledCard>
                     <ResumeListItem>
                         I am a creative and process-driven full stack software developer with enthusiasm for building
                         accessible designs and constructing technical solutions with the user in mind.
                     </ResumeListItem>
                 </StyledCard>
+                <span />
+                <span />
                 <StyledCard>
                     <ResumeListItem>
                         I leverage my professional experience as an educator and guidance counselor to my present work,
                         with a focus on communication and an ability to work with people of all backgrounds.
                     </ResumeListItem>
                 </StyledCard>
-                    <span />
-                    <span />
                 <StyledCard>
                     <ResumeListItem>
                         I thrive in a collaborative environment and am enthusiastic about projects centered on learning
                         and inclusion.
                     </ResumeListItem>
                 </StyledCard>
+                <span />
             </GridContainer2>
             {/* <ResumeListItem>{resumeList.brand}</ResumeListItem> */}
             <ResumeHeader>Technical Skills</ResumeHeader>
@@ -104,7 +105,7 @@ const Resume = () => {
                             borderRadius: "20px",
                             bgcolor: "rgba(255,255,255,0.8)",
                             fontFamily: "JetBrains Mono, monospace",
-                            ":hover": { fontSize: "1rem", backgroundColor: "black", color: "white" },
+                            ":hover": { backgroundColor: "black", color: "white" },
                             transition: "all 0.4s ease-in-out",
                             cursor: "default",
                         }}

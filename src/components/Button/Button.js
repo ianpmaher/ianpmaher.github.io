@@ -23,7 +23,6 @@ const Button = styled.button`
     }
     @media (max-width: 768px) {
         font-size: 0.9rem;
-        max-width: 5rem;
     }
 `
 

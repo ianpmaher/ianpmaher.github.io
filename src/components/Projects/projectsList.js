@@ -24,8 +24,8 @@ const projectsList =
     {
         "id": 2,
         "title": "Mood Ring",
-        "description": "A self-help app for healthier habits and safer schools. Full Stack CRUD application utilizing the 7 RESTful routes, Express.js, MongoDB, Mongoose, Embedded JavaScript, and node.js. This is all within the MVC design pattern.",
-        "tags": ["MVC", "MongoDB", "Express", "Node", "Embedded JavaScript (EJS)", "CSS", "JavaScript", "Heroku", "Netlify", "Git"],
+        "description": "A self-help app for healthier habits and safer schools. Full Stack CRUD application utilizing the 7 RESTful routes, Express.js, MongoDB, Mongoose, Embedded JavaScript, and node.js.",
+        "tags": ["MVC", "MongoDB", "Express", "Node", "EJS", "CSS", "JavaScript", "Heroku", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/moodring",
         "live": "https://still-sierra-16854-4298cf6fca1b.herokuapp.com/logs/",
         "image": moodScreenshot,
@@ -45,7 +45,7 @@ const projectsList =
     {
         "id": 4,
         "title": "Study Italian",
-        "description": "A full-stack web application that allows users to create an account and save their favorite recipes. Users can also view recipes from other users.",
+        "description": "A full-stack web application to help language lovers learn Italian! Users can translate to and from Italian, quiz themselves on words, with more features to come.",
         "tags": ["React", "API", "Express", "MongoDB", "Netlify", "Heroku"],
         "github": "https://github.com/ianpmaher/italian",
         "live": "https://main--darling-rabanadas-f9d73b.netlify.app/",

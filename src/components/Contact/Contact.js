@@ -15,7 +15,7 @@ const ContactContainer = styled.div`
 
 const ContactUl = styled.div`
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;

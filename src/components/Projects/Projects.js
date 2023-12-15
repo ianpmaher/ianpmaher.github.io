@@ -26,6 +26,8 @@ const ProjectsContainer = styled.ul`
     place-content: center;
     list-style-type: none;
     margin: 0 auto;
+    font-family: "Karla", sans-serif;
+    font-size: 1.1rem;
     @media (max-width: 760px) {
         grid-template-columns: 1fr;
         padding: 0.1rem;
@@ -40,7 +42,8 @@ const ProjectsContainer = styled.ul`
 const CardStyle = {
     objectFit: "contain",
     transition: "1.5s all ease-out",
-    backgroundColor: "#FAF9F6",
+    backgroundColor: "#4A4C60",
+    borderRadius: "10px",
     "&:hover": {
         transform: "scale(1.1)",
         boxShadow: 10,
