@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c7564b4f.css",
-    "main.js": "/static/js/main.c873cc2b.js",
+    "main.js": "/static/js/main.8d4f0679.js",
     "static/js/787.9e9f4ffd.chunk.js": "/static/js/787.9e9f4ffd.chunk.js",
     "static/media/gtaScreenshot.png": "/static/media/gtaScreenshot.dfe796c25577b0657b63.png",
+    "static/media/pawsiPad.png": "/static/media/pawsiPad.ba0e716d8e8ff6688941.png",
     "static/media/pawsScreenshot.png": "/static/media/pawsScreenshot.29de23e34bc454b6457f.png",
     "static/media/placeholder.png": "/static/media/placeholder.280a7d7dd831f4db74e2.png",
-    "static/media/dogMountain.jpg": "/static/media/dogMountain.65d13dda6780849744b7.jpg",
     "static/media/moodRating.png": "/static/media/moodRating.00a90ab24c370eace9c8.png",
     "static/media/italianOnPhone.png": "/static/media/italianOnPhone.2da6ce48353d6b07659f.png",
     "static/media/nodejs.svg": "/static/media/nodejs.5a3a9ca294db0539884810b6e6eafedd.svg",
@@ -27,11 +27,11 @@
     "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
     "index.html": "/index.html",
     "main.c7564b4f.css.map": "/static/css/main.c7564b4f.css.map",
-    "main.c873cc2b.js.map": "/static/js/main.c873cc2b.js.map",
+    "main.8d4f0679.js.map": "/static/js/main.8d4f0679.js.map",
     "787.9e9f4ffd.chunk.js.map": "/static/js/787.9e9f4ffd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7564b4f.css",
-    "static/js/main.c873cc2b.js"
+    "static/js/main.8d4f0679.js"
   ]
 }
