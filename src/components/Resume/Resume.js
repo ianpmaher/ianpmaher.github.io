@@ -26,9 +26,8 @@ const ResumeHeader = styled.h4`
 
 const ResumeListItem = styled.p`
     font-size: 1rem;
-    color: #000;
-    background-color: #fff;
-    border-radius: 10px;
+    color: #fff;
+    background-color: #000;
     padding: 1rem;
     margin: 0 auto;
 `;
@@ -53,17 +52,15 @@ const GridContainer = styled.div`
 `;
 
 const StyledCard = styled(Card)`
-    max-width: 33%;
+    width: 100%;
     height: 100%;
-    &:hover {
-        transform: zIndex(1);
-    }
+    border-radius: 10px;
 `;
 
 const GridContainer2 = styled(GridContainer)`
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.25rem;
-    `;
+`;
 
 const Resume = () => {
     // declare state variable
@@ -73,6 +70,7 @@ const Resume = () => {
         <ResumeContainer>
             <ResumeHeader>Resume Section</ResumeHeader>
             <GridContainer2>
+                <span />
                 <StyledCard>
                     <ResumeListItem>
                         I am a creative and process-driven full stack software developer with enthusiasm for building
@@ -81,10 +79,12 @@ const Resume = () => {
                 </StyledCard>
                 <StyledCard>
                     <ResumeListItem>
-                        I apply my professional experience as an educator and guidance counselor to my present work,
+                        I leverage my professional experience as an educator and guidance counselor to my present work,
                         with a focus on communication and an ability to work with people of all backgrounds.
                     </ResumeListItem>
                 </StyledCard>
+                    <span />
+                    <span />
                 <StyledCard>
                     <ResumeListItem>
                         I thrive in a collaborative environment and am enthusiastic about projects centered on learning
