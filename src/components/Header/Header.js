@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Contact from "../Contact/Contact";
 import Box from '@mui/material/Box';
+import Navbar from "../Navbar/Navbar";
 
 
 const HeaderContainer = styled.div`
@@ -32,6 +33,7 @@ const Header = () => {
                 <HeaderText>Ian Maher</HeaderText>
             </Box>
             <Contact />
+            <Navbar />
         </HeaderContainer>
     );
 }
