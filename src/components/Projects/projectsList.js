@@ -3,8 +3,9 @@ let gtaScreenshot = require("../../assets/gtaScreenshot.png");
 let moodScreenshot = require("../../assets/moodRating.png");
 let pawsScreenshot = require("../../assets/pawsScreenshot.png");
 // let dogMountain = require("../../assets/dogMountain.jpg");
-let placeholder = require("../../assets/placeholder.png");
+// let placeholder = require("../../assets/placeholder.png");
 let pawsipad = require("../../assets/pawsiPad.png");
+let simplyScholars = require("../../assets/roughSimplyScholars.png");
 
 const projectsList =
 
@@ -39,8 +40,8 @@ const projectsList =
         "tags": ["Next.js", "Strapi", "Tailwind", "Postgres", "Authorization", "Dynamic Routing"],
         "github": "https://github.com/ianpmaher/simply-scholars",
         "github2": "https://github.com/ianpmaher/simply-scholars-backend",
-        "live": "https://grand-theft-autocorrect.netlify.app/",
-        "image": placeholder,
+        "live": "https://simply-scholars.vercel.app/",
+        "image": simplyScholars,
     },
     {
         "id": 4,

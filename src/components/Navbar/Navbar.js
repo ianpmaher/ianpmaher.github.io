@@ -18,8 +18,11 @@ const FlexContainer = styled.div`
 `;
 
 const StyledButton = styled(Button)`
-    min-width: 6rem;
+    min-width: 4rem;
     padding: 0.5rem 0.25rem;
+    background-color: white;
+    color: black;                                style={{ width: "1rem", height: "1rem"}}
+
 `;
 
 // ========================= //
