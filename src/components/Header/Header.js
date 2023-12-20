@@ -10,13 +10,13 @@ const HeaderContainer = styled.div`
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 `;
 
 const HeaderText = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    margin: 0.2rem 0;
+    margin: 0;
     letter-spacing: 0.1rem;
     font-family: 'Merriweather', serif;
     @media (max-width: 768px) {
@@ -33,7 +33,6 @@ const Header = () => {
                 <HeaderText>Ian Maher</HeaderText>
             </Box>
             <Contact />
-            <Navbar />
         </HeaderContainer>
     );
 }

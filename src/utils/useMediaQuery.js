@@ -1,4 +1,4 @@
-import { type } from "@testing-library/user-event/dist/type";
+// import { type } from "@testing-library/user-event/dist/type";
 import { useEffect, useState } from "react";
 
 export function useMediaQuery(query) {
@@ -30,7 +30,9 @@ export function useMediaQuery(query) {
             // remove event listener on cleanup
             matchMedia.removeEventListener("change", handleChange);
         };
-    }, [query]);
+    // }, [query]);
+    });
+
 
     return matches;
 }

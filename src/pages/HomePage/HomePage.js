@@ -109,6 +109,7 @@ const HomePage = () => {
     return (
         <HomePageContainer>
             <Header />
+            <Navbar />
             <HolyGrailBody>
                 <ContentContainer>
                     <Section name="home" id="section1" element="section1">
