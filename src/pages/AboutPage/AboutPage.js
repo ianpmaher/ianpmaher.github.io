@@ -54,7 +54,7 @@ const wordsArr = [
 
 const AboutPage = (props) => {
     return (
-        <AboutPageContainer>
+        <AboutPageContainer id="about">
             <AboutPageHeader data-aos-once="true" data-aos="fade-up" data-aos-duration="500">
                 Full Stack Developer | Education Advocate
             </AboutPageHeader>

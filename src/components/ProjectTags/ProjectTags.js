@@ -26,7 +26,7 @@ const SmallCard = styled.div`
 `;
 
 const SmallCardText = styled.h1`
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     margin: 0.2rem;
     font-weight: bold,
 `;

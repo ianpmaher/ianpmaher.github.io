@@ -62,7 +62,7 @@ const StyledButton = styled(Button)`
 
 const Projects = (props) => {
     const listItems = projectsList.map((project) => (
-        <li key={project.id}>
+        <li id="projects" key={project.id}>
             <Card sx={{ maxWidth: 600, borderRadius: 3, height: "100%", bgcolor: "", py: 0.5, px: 0, boxShadow: 10 }}>
                 <CardMedia component="img" height="450" image={project.image} alt={project.title} sx={CardStyle} />
                 <CardContent sx={{ bgcolor: "#FAF9F6" }}>

@@ -13,7 +13,7 @@ const ResumePageContainer = styled.div`
 
 const ResumePage = () => {
     return (
-        <ResumePageContainer>
+        <ResumePageContainer id="resume" >
             <Resume />
         </ResumePageContainer>
     );

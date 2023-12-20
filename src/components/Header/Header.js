@@ -28,7 +28,7 @@ const HeaderText = styled.h1`
 
 const Header = () => {
     return (
-        <HeaderContainer>
+        <HeaderContainer id="home">
             <Box sx={{boxShadow: "19", p: "0 1rem", borderRadius: "20px", bgcolor: "#a4f"}}>
                 <HeaderText>Ian Maher</HeaderText>
             </Box>
