@@ -4,7 +4,6 @@ import resumeList from "./resumeList";
 import Card from "@mui/material/Card";
 // import IconCard from "../IconCard/IconCard";
 // import CardContent from "@mui/material/CardContent";
-// import FileDownloadDoneRoundedIcon from '@mui/icons-material/FileDownloadDoneRounded';
 
 const ResumeContainer = styled.div`
     display: flex;
@@ -71,7 +70,11 @@ const Resume = () => {
         <ResumeContainer>
             <ResumeHeader>Let's connect!</ResumeHeader>
             <GridContainer2>
-                <StyledCard>
+                <StyledCard
+                    data-aos-once="true"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                >
                     <ResumeListItem>
                         I am a creative and process-driven full stack software developer with enthusiasm for building
                         accessible designs and constructing technical solutions with the user in mind.
@@ -79,13 +82,23 @@ const Resume = () => {
                 </StyledCard>
                 <span />
                 <span />
-                <StyledCard>
+                <StyledCard
+                    data-aos-once="true"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="1000"
+                >
                     <ResumeListItem>
                         I leverage my professional experience as an educator and guidance counselor to my present work,
                         with a focus on communication and an ability to work with people of all backgrounds.
                     </ResumeListItem>
                 </StyledCard>
-                <StyledCard>
+                <StyledCard
+                    data-aos-once="true"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    data-aos-delay="2000"
+                >
                     <ResumeListItem>
                         I thrive in a collaborative environment and am enthusiastic about projects centered on learning
                         and inclusion.

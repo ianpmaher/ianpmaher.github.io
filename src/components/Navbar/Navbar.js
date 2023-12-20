@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useContext } from "react";
+// import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMediaQuery } from "../../utils/useMediaQuery";
 import { Link } from "react-scroll";
-import Contact from "../Contact/Contact";
-import Box from "@mui/material/Box";
+import { NavbarContext } from "../../context/Context";
+// context 
 
 const FancyNav = styled.nav`
     position: fixed;
@@ -120,37 +121,40 @@ const navItemMotion = {
 
 const Navbar = () => {
     // media query
-    const isDesktop = useMediaQuery("(min-width: 1024px)");
-    // state for hamburger menu
-    const [isOpen, setIsOpen] = useState(false);
-    // state for background change on scroll
-    const [scrollBackground, setScrollBackground] = useState(false);
-    // change background on scroll
-    const changeBackground = () => {
-        if (window.scrollY >= 50) {
-            setScrollBackground(true);
-        } else {
-            setScrollBackground(false);
-        }
-    };
+    // const isDesktop = useMediaQuery("(min-width: 1024px)");
+    // // state for hamburger menu
+    // const [isOpen, setIsOpen] = useState(false);
+    // // state for background change on scroll
+    // const [scrollBackground, setScrollBackground] = useState(false);
+    // // change background on scroll
+    // const changeBackground = () => {
+    //     if (window.scrollY >= 50) {
+    //         setScrollBackground(true);
+    //     } else {
+    //         setScrollBackground(false);
+    //     }
+    // };
+    
+    // // event listener for scroll
+    // window.addEventListener("scroll", changeBackground);
 
-    // event listener for scroll
-    window.addEventListener("scroll", changeBackground);
+    // // useEffect => prevent scroll when nav menu is open
+    // useEffect(() => {
+    //     if (isOpen) {
+    //         document.body.style.overflow = "hidden";
+    //     } else {
+    //         document.body.style.overflow = "unset";
+    //     }
+    // }, [isOpen]);
 
-    // useEffect => prevent scroll when nav menu is open
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "unset";
-        }
-    }, [isOpen]);
+    const { isDesktop, isOpen, setIsOpen, scrollBackground, setScrollBackground } = useContext(NavbarContext);
+
+
 
     return (
         <div>
             <FancyNav
                 style={{ backgroundColor: scrollBackground ? "rgba(10,200,255,0.5)" : "transparent" }}
-                onScroll={changeBackground}
             >
                 {/* DESKTOP Navbar */}
                 {isDesktop && (
@@ -164,10 +168,18 @@ const Navbar = () => {
                             <Link
                                 to="projects"
                                 smooth={true}
-                                duration={10}
+                                duration={0}
                                 style={{ cursor: "pointer", transition: "0.2s" }}
                             >
                                 Projects
+                            </Link>
+                            <Link
+                                to="resume"
+                                smooth={true}
+                                duration={0}
+                                style={{ cursor: "pointer", transition: "0.2s" }}
+                            >
+                                Resume
                             </Link>
                         </FlexContainer>
                     </>
@@ -175,10 +187,14 @@ const Navbar = () => {
                 {/* MOBILE Navbar */}
                 {!isDesktop && (
                     <>
-                        <FlexContainer>
-                            <h1>Home</h1>
-                        </FlexContainer>
-                        <FlexContainer>
+                        <Link to="home" smooth={true} duration={0} style={{ cursor: "pointer" }} onClick={() => setIsOpen(false)}>
+                            <FlexContainer>
+                                <h1>Home</h1>
+                            </FlexContainer>
+                        </Link>
+                        <FlexContainer
+                            onClick={() => setIsOpen((prevOpen) => (!prevOpen ? setIsOpen(true) : setIsOpen(false)))}
+                        >
                             <motion.div
                                 onClick={() => setIsOpen(!isOpen)}
                                 style={{ cursor: "pointer" }}
@@ -219,7 +235,7 @@ const Navbar = () => {
                                 <Link
                                     to="about"
                                     smooth={true}
-                                    duration={10}
+                                    duration={0}
                                     onClick={() => setIsOpen(!isOpen)}
                                     style={{ cursor: "pointer" }}
                                 >
@@ -232,7 +248,7 @@ const Navbar = () => {
                                 <Link
                                     to="projects"
                                     smooth={true}
-                                    duration={10}
+                                    duration={0}
                                     onClick={() => setIsOpen(!isOpen)}
                                     style={{ cursor: "pointer" }}
                                 >
