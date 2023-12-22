@@ -14,7 +14,7 @@ const CardContainer = styled.div`
 `;
 
 const SmallCard = styled.div`
-    margin: 0.1rem auto;
+    margin: 0.1rem 0.3rem;
     border-radius: 10px;
     box-shadow: 0 0 3px 1.5px rgba(0, 0, 0, 0.4);
     cursor: default;
@@ -26,8 +26,9 @@ const SmallCard = styled.div`
 `;
 
 const SmallCardText = styled.h1`
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     margin: 0.2rem;
+    padding: 0.1rem;
     font-weight: bold,
 `;
 

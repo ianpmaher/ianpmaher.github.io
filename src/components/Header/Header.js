@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Contact from "../Contact/Contact";
 import Card from "@mui/material/Card";
 
 const HeaderContainer = styled.div`
@@ -12,7 +11,7 @@ const HeaderContainer = styled.div`
 
 const HeaderText = styled.h1`
     font-size: 2.5rem;
-    margin: 0;
+    margin: 1rem;
     letter-spacing: 0.1rem;
     font-family: "Merriweather", serif;
     color: #fff;
@@ -22,27 +21,12 @@ const HeaderText = styled.h1`
     }
 `;
 
-const FlexContainer = styled.div`
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-`;
-
 //font-family: 'Crimson Text', serif;
 
 const Header = () => {
     return (
         <HeaderContainer id="home">
-            <Card
-                sx={{
-                    bgcolor: "transparent",
-                    p: "0 1rem",
-                    borderRadius: "20px",
-                }}
-            >
-                <HeaderText>Ian Maher</HeaderText>
-            </Card>
+            <HeaderText>Ian Maher</HeaderText>
         </HeaderContainer>
     );
 };

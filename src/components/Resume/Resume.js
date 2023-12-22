@@ -12,13 +12,12 @@ const ResumeContainer = styled.div`
     justify-content: center;
     margin: 0 auto;
     max-width: 100%;
-    font-family: "Klara", sans-serif;
 `;
 
 const ResumeHeader = styled.h4`
     font-size: 1.5rem;
     color: #fff;
-    margin: 0 auto;
+    margin: 1rem auto;
     letter-spacing: 0.1rem;
     font-family: "Roboto Serif", serif;
 `;

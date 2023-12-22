@@ -1,7 +1,7 @@
 import Resume from '../../components/Resume/Resume';
 import styled from 'styled-components';
 
-const ResumePageContainer = styled.div`
+const ResumePageContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -69,6 +69,7 @@ const AboutPage = (props) => {
                         data-aos="fade-up"
                         data-aos-delay="1000"
                         data-aos-duration="1500"
+                        style={{ cursor: "pointer" }}
                     >
                         {/* https://www.radix-ui.com/icons */}
                         <svg width="15" height="15" viewBox="0 0 15 15" fill="#fff" xmlns="http://www.w3.org/2000/svg">

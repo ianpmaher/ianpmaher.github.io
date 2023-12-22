@@ -56,8 +56,20 @@ const SpaceSpan = styled.span`
 
 // styled-components are actually the coolest thing in the world
 const StyledButton = styled(Button)`
+    font-size: 1.15rem;
     min-width: 6rem;
-    padding: 0.5rem 0.25rem;
+    max-width: 8rem;
+    background-color: #EEA47F;
+    color: #00539C;
+    padding: 0.7rem 0.35rem;
+    outline: 3px solid #00539C;
+    border: none;
+    &:hover {
+        background-color: #00539C;
+        color: #EEA47F;
+        outline: 3px solid #EEA47F;
+        transform: scale(1.05);
+    }
 `;
 
 const Projects = (props) => {
@@ -86,13 +98,13 @@ const Projects = (props) => {
                     {project.github2 && (
                         <a
                             href={project.github2}
-                            aria-label="GitHub"
+                            aria-label="GitHub: Backend"
                             title={project.title}
                             target="__blank"
                             rel="noreferrer noopener"
                         >
                             <StyledButton>
-                                GitHub
+                                Backend
                                 <GitHubIcon />
                             </StyledButton>
                         </a>

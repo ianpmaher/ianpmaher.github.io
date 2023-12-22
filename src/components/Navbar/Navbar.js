@@ -14,15 +14,12 @@ const FlexContainer = styled.div`
     justify-content: center;
     align-items: center;
     color: white;
-    gap: 1rem;
 `;
 
 const StyledButton = styled(Button)`
     min-width: 4rem;
-    padding: 0.5rem 0.25rem;
     background-color: white;
-    color: black;                                style={{ width: "1rem", height: "1rem"}}
-
+    color: black;
 `;
 
 // ========================= //
@@ -98,8 +95,7 @@ const navItemMotion = {
 };
 
 const Navbar = () => {
-    const { isDesktop, isOpen, setIsOpen, scrollBackground } = 
-    useContext(NavbarContext);
+    const { isDesktop, isOpen, setIsOpen, scrollBackground } = useContext(NavbarContext);
 
     return (
         <nav
@@ -113,15 +109,21 @@ const Navbar = () => {
             {isDesktop && (
                 <div className="flex flex-row items-center justify-between flex-wrap h-10 w-10 outline-orange-600">
                     {/* <FlexContainer> */}
-                    <Link to="about" smooth={true} duration={0}>
-                        <StyledButton className="cursor-pointer">About</StyledButton>
-                    </Link>
-                    <Link to="projects" smooth={true} duration={0}>
-                        <StyledButton className="cursor-pointer">Projects</StyledButton>
-                    </Link>
-                    <Link to="resume" smooth={true} duration={0}>
-                        <StyledButton className="cursor-pointer">Resume</StyledButton>
-                    </Link>
+                    <StyledButton className="cursor-pointer" aria-label="scroll to About section">
+                        <Link to="about" smooth={true} duration={0}>
+                            About
+                        </Link>
+                    </StyledButton>
+                    <StyledButton className="cursor-pointer" aria-label="scroll to Projects section">
+                        <Link to="projects" smooth={true} duration={0}>
+                            Projects
+                        </Link>
+                    </StyledButton>
+                    <StyledButton className="cursor-pointer" aria-label="scroll to Resume section">
+                        <Link to="resume" smooth={true} duration={0}>
+                            Resume
+                        </Link>
+                    </StyledButton>
                     {/* </FlexContainer> */}
                 </div>
             )}
@@ -134,8 +136,7 @@ const Navbar = () => {
                         duration={0}
                         style={{ cursor: "pointer" }}
                         onClick={() => setIsOpen(false)}
-                    >
-                    </Link>
+                    ></Link>
                     <div onClick={() => setIsOpen((prevOpen) => !prevOpen)} className="space-y-1.5 cursor-pointer z-50">
                         <motion.div
                             onClick={() => setIsOpen(false)}
