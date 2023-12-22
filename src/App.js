@@ -12,13 +12,12 @@ function App() {
     }, []);
 
     return (
-
         <CssBaseline>
-            <NavProvider>    
-                <div className="App">
+            <div className="App">
+                <NavProvider>
                     <HomePage />
-                </div>
-            </NavProvider>
+                </NavProvider>
+            </div>
         </CssBaseline>
     );
 }

@@ -5,6 +5,7 @@ import AboutPage from "../AboutPage/AboutPage";
 import Projects from "../../components/Projects/Projects";
 import ResumePage from "../ResumePage/ResumePage";
 import Navbar from "../../components/Navbar/Navbar";
+import Contact from "../../components/Contact/Contact";
 
 const HomePageContainer = styled.div`
     display: flex;
@@ -34,6 +35,15 @@ const ContentContainer = styled.main`
     justify-content: center;
     width: 100%;
 `;
+
+const FlexContainer = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20rem;
+`;
+
 // #282A36
 //     background: rgba(82,74,164,1);
 
@@ -41,7 +51,10 @@ const HomePage = () => {
     return (
         <HomePageContainer>
             <Header />
-            <Navbar />
+            <FlexContainer>
+                <Navbar />
+                <Contact />
+            </FlexContainer>
             <HolyGrailBody>
                 <ContentContainer>
                     <AboutPage />

@@ -107,7 +107,7 @@ const Resume = () => {
                 <span />
             </GridContainer2>
             {/* <ResumeListItem>{resumeList.brand}</ResumeListItem> */}
-            <ResumeHeader>Technical Skills</ResumeHeader>
+            {/* <ResumeHeader>Technical Skills</ResumeHeader>
             <GridContainer>
                 {resumeList["Technical Skills"].map((skill) => (
                     <Card
@@ -126,7 +126,7 @@ const Resume = () => {
                         {skill}
                     </Card>
                 ))}
-            </GridContainer>
+            </GridContainer> */}
             {/* <IconCard style={{transform: "scale(1.5)", backgroundColor: "wheat"}}>
                 <a
                     href="https://drive.google.com/file/d/13oKE953LCTEGSpENEqnH6HEVO0NNi_HU/view?usp=sharing"

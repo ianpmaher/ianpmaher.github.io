@@ -1,11 +1,11 @@
 import { createContext, useState, useEffect, useMemo } from "react";
 import { useMediaQuery } from "../utils/useMediaQuery";
 
+// props? 
+
 // create context
-export const NavbarContext = createContext(
-    // TYPE ASSERTION - we are asserting that the value of the context is of type NavbarContextProps
-    {}
-);
+export const NavbarContext = createContext({});
+// TYPE ASSERTION - we are asserting that the value of the context is of type NavbarContextProps
 
 // create context provider
 export const NavProvider = ({ children }) => {

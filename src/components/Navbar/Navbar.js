@@ -1,10 +1,10 @@
-import styled from "styled-components";
 import { useContext } from "react";
+import { NavbarContext } from "../../context/Context";
+import styled from "styled-components";
 // import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 // import { useMediaQuery } from "../../utils/useMediaQuery";
 import { Link } from "react-scroll";
-import { NavbarContext } from "../../context/Context";
 import Button from "../Button/Button";
 // context
 
@@ -32,7 +32,7 @@ const StyledButton = styled(Button)`
 const navMotion = {
     // initial state ==== hidden
     hidden: {
-        y: "-100%",
+        y: "100%",
         opacity: 0,
         transition: {
             duration: 0.6,
@@ -53,7 +53,7 @@ const navMotion = {
     },
     // exit state ==== hidden
     exit: {
-        y: "-100%",
+        y: "100%",
         opacity: 0,
         transition: {
             duration: 0.6,
@@ -98,7 +98,8 @@ const navItemMotion = {
 };
 
 const Navbar = () => {
-    const { isDesktop, isOpen, setIsOpen, scrollBackground } = useContext(NavbarContext);
+    const { isDesktop, isOpen, setIsOpen, scrollBackground } = 
+    useContext(NavbarContext);
 
     return (
         <nav
@@ -111,22 +112,6 @@ const Navbar = () => {
             {/* DESKTOP Navbar */}
             {isDesktop && (
                 <div className="flex flex-row items-center justify-between flex-wrap h-10 w-10 outline-orange-600">
-                    <Link to="home" smooth={true} duration={10} className="cursor-pointer">
-                        <StyledButton className="cursor-pointer">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16"
-                                fill="#fff"
-                                style={{ width: "1rem", height: "1rem"}}
-                            >
-                                <path
-                                    fillRule="evenodd"
-                                    d="M4.78 4.97a.75.75 0 0 1 0 1.06L2.81 8l1.97 1.97a.75.75 0 1 1-1.06 1.06l-2.5-2.5a.75.75 0 0 1 0-1.06l2.5-2.5a.75.75 0 0 1 1.06 0ZM11.22 4.97a.75.75 0 0 0 0 1.06L13.19 8l-1.97 1.97a.75.75 0 1 0 1.06 1.06l2.5-2.5a.75.75 0 0 0 0-1.06l-2.5-2.5a.75.75 0 0 0-1.06 0ZM8.856 2.008a.75.75 0 0 1 .636.848l-1.5 10.5a.75.75 0 0 1-1.484-.212l1.5-10.5a.75.75 0 0 1 .848-.636Z"
-                                    clipRule="evenodd"
-                                />
-                            </svg>
-                        </StyledButton>
-                    </Link>
                     {/* <FlexContainer> */}
                     <Link to="about" smooth={true} duration={0}>
                         <StyledButton className="cursor-pointer">About</StyledButton>
@@ -150,7 +135,6 @@ const Navbar = () => {
                         style={{ cursor: "pointer" }}
                         onClick={() => setIsOpen(false)}
                     >
-                        oh
                     </Link>
                     <div onClick={() => setIsOpen((prevOpen) => !prevOpen)} className="space-y-1.5 cursor-pointer z-50">
                         <motion.div
@@ -213,6 +197,19 @@ const Navbar = () => {
                                 >
                                     <FlexContainer>
                                         <h1>Projects</h1>
+                                    </FlexContainer>
+                                </Link>
+                            </motion.div>
+                            <motion.div variants={navItemMotion}>
+                                <Link
+                                    to="resume"
+                                    smooth={true}
+                                    duration={0}
+                                    onClick={() => setIsOpen(false)}
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    <FlexContainer>
+                                        <h1>Resume</h1>
                                     </FlexContainer>
                                 </Link>
                             </motion.div>
