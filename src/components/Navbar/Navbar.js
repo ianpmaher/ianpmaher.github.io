@@ -1,9 +1,10 @@
-import { useContext } from "react";
-import { NavbarContext } from "../../context/Context";
+import { useState, useEffect } from "react";
+// import { useContext } from "react";
+// import { NavbarContext } from "../../context/Context";
 import styled from "styled-components";
 // import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-// import { useMediaQuery } from "../../utils/useMediaQuery";
+import { useMediaQuery } from "../../utils/useMediaQuery";
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
 // context
@@ -68,7 +69,7 @@ const navItemMotion = {
     // initial == hidden
     hidden: {
         opacity: 0,
-        y: 100,
+        y: 50,
         transition: {
             duration: 0.6,
             ease: "easeInOut",
@@ -95,14 +96,41 @@ const navItemMotion = {
 };
 
 const Navbar = () => {
-    const { isDesktop, isOpen, setIsOpen, scrollBackground } = useContext(NavbarContext);
+    // const { isDesktop, isOpen, setIsOpen, scrollBackground } = useContext(NavbarContext);
+    // media query hook
+    const isDesktop = useMediaQuery("(min-width: 1024px)");
+    // hamburger menu toggle state
+    const [isOpen, setIsOpen] = useState(false);
+    // background change on scroll state
+    const [scrollBackground, setScrollBackground] = useState(false);
+
+    // change background function
+    const changeBackground = () => {
+        if (window.scrollY > 50) {
+            setScrollBackground(true);
+        } else {
+            setScrollBackground(false);
+        }
+    };
+
+    // event listener for scroll
+    window.addEventListener("scroll", changeBackground);
+
+    // useEffect for preventing scroll when nav is toggled
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [isOpen]);
 
     return (
         <nav
             className={
                 scrollBackground
-                    ? "bg-[#5ECBF7] h-14 w-[calc(100%-2rem)] fixed top-0 left-4 z-10 flex items-center justify-between p-8 font-medium my-2 transition ease-in-out duration-200 shadow-lg"
-                    : "bg-[#5ECBF7)] h-14 w-[calc(100%-2rem)] fixed top-0 left-4 z-10 flex items-center justify-between p-8 font-medium my-2 transition ease-in-out duration-200"
+                    ? "bg-white h-14 w-[calc(100%-2rem)] fixed top-0 left-4 z-10 flex items-center justify-between p-8 font-medium my-2 transition ease-in-out duration-200 shadow-lg"
+                    : "bg-white h-14 w-[calc(100%-2rem)] fixed top-0 left-4 z-10 flex items-center justify-between p-8 font-medium my-2 transition ease-in-out duration-200"
             }
         >
             {/* DESKTOP Navbar */}

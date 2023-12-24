@@ -4,7 +4,7 @@ import { useMediaQuery } from "../utils/useMediaQuery";
 // props? 
 
 // create context
-export const NavbarContext = createContext({});
+export const NavbarContext = createContext(null);
 // TYPE ASSERTION - we are asserting that the value of the context is of type NavbarContextProps
 
 // create context provider
