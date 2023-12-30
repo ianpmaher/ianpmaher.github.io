@@ -1,8 +1,6 @@
 let italianOnPhone = require("../../assets/italianOnPhone.png");
 let gtaScreenshot = require("../../assets/gtaResize.png");
 let moodScreenshot = require("../../assets/moodScreenshot.png");
-// let pawsScreenshot = require("../../assets/pawsScreenshot.png");
-// let dogMountain = require("../../assets/dogMountain.jpg");
 // let placeholder = require("../../assets/placeholder.png");
 let pawsipad = require("../../assets/pawsiPad.webp");
 let simplyScholars = require("../../assets/roughSimplyScholars.png");
