@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import "./App.css";
 import HomePage from "./pages/HomePage/HomePage";
 import CssBaseline from "@mui/material/CssBaseline";
-import { NavProvider } from "./context/Context";
+// import { NavProvider } from "./context/Context";
 
 function App() {
     useEffect(() => {
@@ -14,9 +14,9 @@ function App() {
     return (
         <CssBaseline>
             <div className="App">
-                <NavProvider>
+                {/* <NavProvider> */}
                     <HomePage />
-                </NavProvider>
+                {/* </NavProvider> */}
             </div>
         </CssBaseline>
     );
