@@ -41,7 +41,10 @@ const FlexContainer = styled.div`
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 20rem;
+    gap: 5rem;
+    @media (max-width: 768px) {
+        gap: 1rem;
+    }
 `;
 
 // #282A36

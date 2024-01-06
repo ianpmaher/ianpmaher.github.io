@@ -98,7 +98,7 @@ const Projects = (props) => {
                     {project.github2 && (
                         <a
                             href={project.github2}
-                            aria-label="GitHub: Backend"
+                            aria-label="Backend"
                             title={project.title}
                             target="__blank"
                             rel="noreferrer noopener"

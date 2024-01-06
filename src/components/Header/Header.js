@@ -16,7 +16,7 @@ const HeaderText = styled.h1`
     font-family: "Merriweather", serif;
     color: #fff;
     @media (max-width: 768px) {
-        font-size: 1.25rem;
+        font-size: 2rem;
         letter-spacing: auto;
     }
 `;

@@ -33,7 +33,7 @@ const navMotion = {
         y: "100%",
         opacity: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             staggerChildren: 0.15,
             ease: "easeInOut",
         },
@@ -43,7 +43,7 @@ const navMotion = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             when: "beforeChildren",
             staggerChildren: 0.15,
             ease: "easeInOut",
@@ -54,7 +54,7 @@ const navMotion = {
         y: "100%",
         opacity: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             ease: "easeInOut",
             when: "afterChildren",
             staggerChildren: 0.15,
@@ -71,7 +71,7 @@ const navItemMotion = {
         opacity: 0,
         y: 50,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             ease: "easeInOut",
         },
     },
@@ -80,7 +80,7 @@ const navItemMotion = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             ease: "easeInOut",
         },
     },
@@ -89,7 +89,7 @@ const navItemMotion = {
         opacity: 0,
         y: 50,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             ease: "easeInOut",
         },
     },
@@ -135,7 +135,7 @@ const Navbar = () => {
         >
             {/* DESKTOP Navbar */}
             {isDesktop && (
-                <div className="flex flex-row items-center justify-between flex-wrap h-10 w-10 outline-orange-600">
+                <div className="flex flex-row items-center justify-between flex-wrap h-10 w-10">
                     {/* <FlexContainer> */}
                     <StyledButton className="cursor-pointer" aria-label="scroll to About section">
                         <Link to="about" smooth={true} duration={0}>
@@ -212,7 +212,7 @@ const Navbar = () => {
                                     style={{ cursor: "pointer" }}
                                 >
                                     <FlexContainer>
-                                        <h1>Home</h1>
+                                        <h1 style={{"writingMode": "horizontal-tb"}}>Home</h1>
                                     </FlexContainer>
                                 </Link>
                             </motion.div>
