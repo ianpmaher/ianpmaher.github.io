@@ -5,6 +5,7 @@ import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 import Button from "../Button/Button";
 import IconCard from "../IconCard/IconCard";
 import GitHub from "@mui/icons-material/GitHub";
+import PopoverElem from "../PopoverElem/PopoverElem";
 
 const ContactContainer = styled.div`
     display: flex;
@@ -29,11 +30,9 @@ const Contact = () => {
         <ContactContainer>
             <ContactUl>
                 <IconCard>
-                    <a href="mailto:ianpmaher@gmail.com" target="_blank" rel="noreferrer noopener" title="email">
-                        <Button>
+                        <PopoverElem>
                             <EmailSharpIcon aria-label="email" />
-                        </Button>
-                    </a>
+                        </PopoverElem>
                     {/* <span>ianpmaher@gmail.com</span> */}
                 </IconCard>
                 <IconCard>
