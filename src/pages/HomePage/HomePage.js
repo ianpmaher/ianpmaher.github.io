@@ -6,6 +6,7 @@ import Projects from "../../components/Projects/Projects";
 import ResumePage from "../ResumePage/ResumePage";
 import Navbar from "../../components/Navbar/Navbar";
 import Contact from "../../components/Contact/Contact";
+import { motion, useScroll } from "framer-motion";
 
 const HomePageContainer = styled.div`
     display: flex;
@@ -47,26 +48,47 @@ const FlexContainer = styled.div`
     }
 `;
 
+const ProgressBar = styled(motion.div)`
+    position: fixed;
+    top: 1;
+    left: 0;
+    height: 2rem;
+    width: 100%;
+    background-color: rgba(223, 134, 152, 0.8);
+    z-index: 100;
+    transform-origin: top left;
+    border-radius: 20px;
+    @media (max-width: 768px) {
+        width: 3rem;
+    }
+`;
+
 // #282A36
 //     background: rgba(82,74,164,1);
 
 const HomePage = () => {
+    const { scrollYProgress } = useScroll();
+    const scaleX = scrollYProgress;
+
     return (
-        <HomePageContainer>
-            <Header />
-            <FlexContainer>
-                <Navbar />
-                <Contact />
-            </FlexContainer>
-            <HolyGrailBody>
-                <ContentContainer>
-                    <AboutPage />
-                    <Projects />
-                    <ResumePage />
-                </ContentContainer>
-            </HolyGrailBody>
-            <Footer />
-        </HomePageContainer>
+        <>
+            <ProgressBar style={{ scaleX }} />
+            <HomePageContainer>
+                <Header />
+                <FlexContainer>
+                    <Navbar />
+                    <Contact />
+                </FlexContainer>
+                <HolyGrailBody>
+                    <ContentContainer>
+                        <AboutPage />
+                        <Projects />
+                        <ResumePage />
+                    </ContentContainer>
+                </HolyGrailBody>
+                <Footer />
+            </HomePageContainer>
+        </>
     );
 };
 

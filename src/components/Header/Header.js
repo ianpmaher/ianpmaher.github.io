@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Card from "@mui/material/Card";
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -11,7 +10,7 @@ const HeaderContainer = styled.div`
 
 const HeaderText = styled.h1`
     font-size: 2.5rem;
-    margin: 1rem;
+    margin: 0.5rem auto auto auto;
     letter-spacing: 0.1rem;
     font-family: "Merriweather", serif;
     color: #fff;
