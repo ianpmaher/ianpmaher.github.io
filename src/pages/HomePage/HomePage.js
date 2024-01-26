@@ -58,9 +58,6 @@ const ProgressBar = styled(motion.div)`
     z-index: 100;
     transform-origin: top left;
     border-radius: 20px;
-    @media (max-width: 768px) {
-        width: 3rem;
-    }
 `;
 
 // #282A36
