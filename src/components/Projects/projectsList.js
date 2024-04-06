@@ -11,7 +11,7 @@ const projectsList =
     {
         "id": 1,
         "title": "PawsOn.Life",
-        "description": "Developed in an Agile team environment, PawsOn.Life is full-stack web application that allows users to search for hiking trails in their area via Google Maps API. Users can review trails as being pet-friendly. Users can also create an account and save trails to their favorites list.",
+        "description": "Developed in an Agile team environment, PawsOn.Life is a full-stack web application that allows users to search for hiking trails in their area via Google Maps API. Users can review trails as being pet-friendly. Users can also create an account and save trails to their favorites list.",
         "tags": ["MERN", "React", "MongoDB", "Google Maps API", "Express", "Node", "Agile development", "RESTful API", "MVC", "Material UI", "Heroku", "Netlify", "Git"],
         "github": "https://github.com/ianpmaher/pawsOnLifeFrontEnd",
         "github2": "https://github.com/ianpmaher/pawsOnLifeBackEnd",
